@@ -43,7 +43,7 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div id="logo-login">
-                        <h1>TMS终端管理系统
+                        <h1>终端管理系统
                             <span>v1.0</span>
                         </h1>
                     </div>
@@ -54,16 +54,16 @@
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
                     <div class="account-box"> 
-                        <form role="form" action="<?php echo base_url() ?>index.php/shopadmin/login/islogin">
+                        <form role="form" action="<?php echo base_url() ?>shopadmin/index.php/welcome/islogin" method="post">
                             <div class="form-group">
                                 <!--a href="#" class="pull-right label-forgot">Forgot email?</a-->
                                 <label for="inputUsernameEmail">用户名</label>
-                                <input type="text" id="inputUsernameEmail" class="form-control">
+                                <input type="text" id="inputUsernameEmail" name="username" class="form-control">
                             </div>
                             <div class="form-group">
                                 <!--a href="#" class="pull-right label-forgot">Forgot password?</a-->
                                 <label for="inputPassword">密码</label>
-                                <input type="password" id="inputPassword" class="form-control">
+                                <input type="password" id="inputPassword" name="password" class="form-control">
                             </div>
                             <!-- <div class="checkbox pull-left">
                                 <label>
@@ -73,7 +73,7 @@
                                 登 录
                             </button>
                         </form>
-                        <a class="forgotLnk" href="index.html"></a>
+                        <!-- <a class="forgotLnk" href="index.html"></a> -->
                         <!--div class="or-box">
                           
                             <center><span class="text-center login-with">Login or <b>Sign Up</b></span></center>
@@ -117,13 +117,13 @@
         </div>
 
  		<p>&nbsp;</p>
-        <div style="text-align:center;margin:0 auto;">
+       <!--  <div style="text-align:center;margin:0 auto;">
             <h6 style="color:#fff;">Copyright(C)2014 fjcloudsoft.com All Rights Reserved<br />
 				福建云软网络科技有限公司 版权所有 闽IP备07021605号</h6>
-        </div>
+        </div> -->
 
     </div>
-    <div id="test1" class="gmap3"></div>
+    <!-- <div id="test1" class="gmap3"></div> -->
 
 
 
