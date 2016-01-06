@@ -80,5 +80,56 @@ class Hcommon{
 		}
 		return $str;
 	}
+
+	/**
+	**JS 跳转
+	**@param $url url地址
+	**@param $msg 提示信息
+	**@return 
+	**/
+
+	public static function js_redirect($url,$msg){
+		$redirect='<script type="text/javascript">
+					alert("'.$msg.'");
+					window.location.href="'.$url.'";
+			</script>';
+
+		return $redirect;
+	}
+
+	/**
+	**文件上传
+	**@param $_FILES POST 文件
+	**@return 
+	**/
+
+	public static function upload($files){
+		$filename=date("Y-m-d",time());
+
+		if(!file_exists("/uploads/".$filename)){
+			mkdir("/uploads/".$filename,0777);
+		}
+		$targetFolder= '/uploads/'.$filename;
+		$str="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYX";
+		$verifyToken = md5('unique_salt' . $_POST['timestamp']);
+		if (!empty($files) && $_POST['token'] == $verifyToken) {
+			$tempFile = $files['fileField']['tmp_name'];
+			$targetPath = $_SERVER['DOCUMENT_ROOT'] . $targetFolder;
+			$newname=substr(strrchr($files['fileField']['name'],"."),0);
+			
+			$new_name=substr(str_shuffle($str),0,10).$newname;
+			$targetFile = rtrim($targetPath,'/') . '/' .$new_name;
+			
+			$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+			$fileParts = pathinfo($targetFile);
+			if (in_array($fileParts['extension'],$fileTypes)) {
+				move_uploaded_file($tempFile,$targetFile);
+				$new_filename=$targetFolder."/".$new_name;
+				return  $new_filename;
+			} else {
+				return 'Invalid file type.';
+			}
+		}
+	}
 }
 ?>
