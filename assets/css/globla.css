@@ -1,0 +1,347 @@
+﻿body,div,span,ul{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size:16px;
+}
+.clear
+{
+    clear:both;
+}
+a,
+a:active,
+a:visited
+{
+    color:#000000;
+    text-decoration:none;
+}
+a:hover
+{
+    color:#0051AA;
+    text-decoration:none;
+}
+/**宽度改为990**/
+.container
+{
+    width:990px;
+    margin:0px auto;
+    display:block;
+}
+.container img{width: 100%}
+/**宽度增加到990px**/
+.header
+{
+    background: #C4C4C5;
+    width: 100%;
+    margin: 0 auto;	 
+}
+.borbot
+{
+    border-bottom:solid 1px #e0e0e0;
+    background: #000;
+    width: 100%;
+}
+.header .top
+{
+    height:30px;
+	background:#000;
+	font-family:"微软雅黑";
+	font-size:14px;
+	color:#CCC;
+}
+/*.index_left{ background:#000; height:30px; width:200px; position:absolute; top:0px; left:0;}
+.index_right{ background:#000; height:30px; position:absolute; width:198px; top:0px; right:0px;}
+.index_left1{ background:#000; height:50px; width:200px; position:absolute; top:0px; left:0;}
+.index_right1{ background:#000; height:50px; position:absolute; width:198px; top:0px; right:0px;}
+.index_left2{ background:#000; height:30px; width:210px; position:absolute; top:0px; left:0;}
+.index_right2{ background:#000; height:30px; position:absolute; width:205px; top:0px; right:0px;}*/
+.main
+{
+}
+/**change**/
+.index{
+    float: left;
+}
+.index a{
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+}
+.header .top .curcity
+{
+    display:block;
+    height:30px;
+    line-height:30px;
+    width:60px;
+    text-align:right;
+    float:left;
+    font-size: 14px;
+    color: #fff;
+}
+.header .top .sp
+{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#7a7776;
+}
+.header .top .othercity
+{
+    display:inline-block;
+    height:30px;
+    line-height:30px;
+    color:#7a7776;
+}
+.header .top .topright
+{
+    height:30px;
+    float:right;
+    width:540px;
+
+}
+.header .top .topright .base
+{
+    height:30px;
+    line-height:30px;
+    margin:0px 3px;
+    font-size:12px;
+    display:inline-block;
+    float:right;
+	color:#CCC;
+}
+.header .top .topright .button
+{
+    background:url(../images/btnbg.png) repeat-x ;
+    height:20px;
+    line-height:20px;
+    padding:0px 4px;
+    color:#2f2f2f;
+    border:none;
+    border:solid 1px #ccc;
+    margin-top:4px;
+
+}
+/**宽度增加到180**/
+.header .logo
+{
+    width:180px; 
+    height:90px;
+   
+    border:1px #ccc solid;
+    border-top:none;
+    float:left;
+}
+.header .menu
+{
+    height:91px;
+    width:808px;
+    float:right;
+}
+.header .menu .top
+{
+    height:36px;
+    line-height:36px;
+    background:#e87300;
+    color:#FFFFFF;
+    width:100%;
+}
+/**导航栏鼠标移入**/
+.header .menu .top a:hover{
+    color: #e87300;
+    background-color: #fff;
+}
+/**字体加粗**/
+.header .menu .top a
+{
+    padding: 0px 5px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 36px;
+    display: inline-block;
+}
+.header .menu .car
+{
+    height:54px;
+    width:100%;
+    overflow:hidden;
+    border-bottom:solid 1px #ccc;
+}
+.header .menu .car a
+{
+    background:url(../images/carlist.jpg) no-repeat;
+    background-position:0px 0px;
+    width:81px;
+    height:54px;
+    display:block;
+    margin:0px;
+    padding:0px;
+    float:left;
+}
+.header .menu .car a:hover{
+  background:url(../images/cartype.png) no-repeat;
+}
+.header .menu .car a.car1
+{
+    background-position:0px 0px;
+    width:79px;
+}
+.header .menu .car a.car2
+{
+    background-position:-79px 0px;
+}
+.header .menu .car a.car3
+{
+    background-position:-160px 0px;
+}
+.header .menu .car a.car4
+{
+    background-position:-241px 0px;
+}
+.header .menu .car a.car5
+{
+    background-position:-322px 0px;
+}
+.header .menu .car a.car6
+{
+    background-position:-403px 0px;
+}
+.header .menu .car a.car7
+{
+    background-position:-484px 0px;
+}
+.header .menu .car a.car8
+{
+    background-position:-565px 0px;
+}
+.header .menu .car a.car9
+{
+    background-position:-646px 0px;
+}
+.header .menu .car a.car10
+{
+    background-position:-727px 0px;
+}
+
+
+
+/*下拉菜单*/
+ul.dropdown{ 
+  position: relative; 
+  float: left;
+  width: 80px; 
+}
+
+ul.dropdown li{ 
+  font-weight: bold; 
+  float: left; 
+  width: 80px; 
+  position: relative;
+  background: #fcfcfc;
+}
+
+ul.dropdown a:hover{ 
+  color: #000; 
+}
+
+ul.dropdown li a { 
+  display: block; 
+  color: #7a7776; 
+  position: relative; 
+  z-index: 2000; 
+  text-align: center;
+  padding-right:10px;
+  text-decoration: none;
+  font-weight: 300;
+  height:30px;
+  line-height:30px;
+}
+
+ul.dropdown li a:hover,
+ul.dropdown li a.hover{ 
+  background: #3498db;
+  position: relative;
+  color: #fff;
+}
+
+
+ul.dropdown ul{ 
+ position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 160px; 
+  z-index: 1000;
+  box-shadow: 5px 5px 10px #5A4F4F;
+  margin-top: 30px;
+}
+
+ul.dropdown ul li { 
+  font-weight: normal; 
+  background: #f6f6f6; 
+  color: #000; 
+  border-bottom: 1px solid #ccc; 
+}
+
+ul.dropdown ul li a{ 
+  display: block; 
+  color: #34495e !important;
+  background: #fcfcfc !important;
+} 
+
+ul.dropdown ul li a:hover{
+  display: block; 
+  background: #3498db !important;
+  color: #fff !important;
+} 
+
+.drop > a{
+  position: relative;
+}
+
+.drop > a:after{
+  content:"";
+  position: absolute;
+  right: 10px;
+  top: 40%;
+  border-left: 5px solid transparent;
+  border-top: 5px solid #333;
+  border-right: 5px solid transparent;
+  z-index: 999;
+}
+
+.drop > a:hover:after{
+  content:"";
+   border-left: 5px solid transparent;
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+}
+
+/*底部*/
+.footer
+{
+	margin-top:20px;
+}
+.footer .ql,
+.footer .info
+{
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+}
+.footer .ql a,
+.footer .info a
+{
+	color:#0057B0;
+	display:inline-block;
+	font-size:12px;
+	padding:0px 5px;
+}
+
+#tj_content{}
+#lst_list ul li{ display:none;}
+#main_tab ul li{ display:none;}
+#shop_main ul li { display:none;}

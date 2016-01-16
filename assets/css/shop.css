@@ -1,0 +1,46 @@
+/* 购车 */
+.shop{width:100%; height:30px;border-bottom:5px solid #ccc;}
+.shop_nav{ height:50px; width: 100%; margin-top: 15px;}
+.shop_nav li a{ list-style: none; float: left; margin: 0px 6px;color:#666; padding: 2px;font-size:16px; display: block; text-decoration: none;
+font-family: "微软雅黑"; }
+.shoptitle{ font-size:24px; font-weight:bold; margin-top:10px; position:relative;color:#000; margin-bottom:10px; border-bottom:5px solid blue; padding:7px;}
+.shoptitle em{ float:right; font-size:12px; margin:0px 5px; }
+.xt_3{ width:150px; background:red; height: 5px;float: left; position: absolute; bottom:-5px; left:0;}
+.jiage，.Level,.cheshen{ width:100%; line-height: 35px;}
+.jiage  a { display:inline-block; margin: 0px 1px;font-size: 13px;}
+.cheshen_right a:hover ,.cheshen_left a:hover{ background: red; display:inline-block;   text-decoration: none;
+    color: #fff; padding: 0; margin: 0;}
+.jiage a:hover {
+    background: red;
+    text-decoration: none;
+    color: #fff;}
+.right_input{width: 165px; height:18px; float: right; font-size: 12px;}
+.right_input input{ width:40px;}
+.Level a{display:inline-block; margin: 0px 3px;font-size: 13px; margin-top: 10px;}
+.cheshen_right{width:65%; float: right;}
+.cheshen_left{width：30%; float: left;}
+.cheshen a{ font-size: 13px;display:inline-block; margin: 0px 2px;}
+.txt_size{font-size: 16px; text-align: left; font-weight: bold; float: left;}
+.qita{width: 100%; float: left; }
+.qita ul li{ list-style:none; float: left; height: 100px; width: 100px; margin: 1px 0px;}
+.qita ul li a { width: 100%;}
+.qita ul li:first-child{ margin-left: 60px;}
+.shopbanner{width: 100%; height: 90px; float: left; background:#CCCCCC; margin-top: 15px;}
+.pinpai,.chexing,.ranking,.foter{width:100%; float: left;  height: 100%; margin-top: 10px;height: 100%;}
+.pinpai ul li{ float: left; width: 19%; border-right: 1px solid #CCCCCC; border-bottom: 1px solid #ccc; height: 100px;}
+.pinpai ul li img,.chexing ul li img{ margin: 0 auto; display: block;}
+.pinpai ul li a{ display: block; width: 100%; text-align: center;}
+.shoptitle span{ display: inline-block; border-left: 1px solid #CCCCCC; margin-left: 20px; height: 20px; line-height: 20px; padding-left: 10px;}
+.chexing ul li{ list-style: none; float: left; margin: 15px 15px; width: 20%; height: 150px; }
+.chexing ul li a{ display: inline-block; text-align: center; width: 100%;}
+.price_txt{ width: 100%; text-align: center; color:#CCCCCC; font-size: 12px; margin-top: 8px;}
+.ranking ul li{ float: left; height:400px; width: 30%; margin: 10px 11px;}
+.rank_list a{ display: inline-block; width: 100%; text-decoration: none;}
+.txt-red{background: red; color: #fff;}
+.no{ background: #ccc; color: #fff;}
+.right_che{ float: right; font-size: 12px; margin-right: 10px;}
+.linke{ width: 100%; height: 50px; background: #ccc;}
+.linke span{ font-size:20px; display: inline-block; float: left;}
+.linke a{ float: right;text-decoration:none;}
+.foter{ border: 1px solid #ccc;}
+

@@ -1,0 +1,586 @@
+
+.cxbanner{ margin: 0 auto; width: 960px; height: 90px; overflow: hidden;}
+.dealer_con,.search_dealer{margin: 0 auto; width: 960px;}
+.Toggle h1{color:#3b5998; float: left; font-size: 24px; margin-top:10px;}
+.Toggle{ width:100%; float: left;  height: 40px; border-bottom: 5px solid #3b5998;}
+.Toggle a{
+	 display: inline-block;
+	 margin: 20px 10px;
+	 position: relative;
+	 color:#3b5998;
+}
+a.sj_login{ display: block; width: 80px; height: 30px;  background:#3b5998; color:#FFFBE2;float: right;
+ margin-top:5px; font-size: 12px; text-align: center; line-height: 30px;
+}
+.search_title{
+	width: 100%;
+	background: #ECECEC;
+	height: 30px;
+    line-height: 30px;
+    border: 1px solid #CCCCCC;
+    float: left;
+    
+    
+	
+}
+.search_title p a{ 
+	color:#3b5998;
+	 font-family: "微软雅黑"; 
+	 font-size: 12px;
+	 }
+.search_title p{
+	margin-left: 10px;
+	
+	}
+.search_dealer{
+ 
+	float: left;
+	}
+.area{ 
+	width: 100%;
+	float: left;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	
+	 
+	}
+.area_con{ 
+	width: 100%;
+	float: left;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	padding-top: 10px;
+	}
+.area_con a{ 
+	display: block;
+	float: left;
+	margin: 0px 10px;
+	color:#3b5998;
+	font-family: "微软雅黑";
+	font-size: 12px;
+	padding: 3px;
+	
+	   }
+.area_con a:hover{
+	background: #3b5998;
+	 color: #FFFFFF;
+	padding: 3px;
+	
+}
+.area_con h3{
+	 float: left;
+	 color: #3E3A39;
+	 
+	
+}
+a.first_txt{ 
+	background: #3b5998;
+	 color: #FFFFFF;
+	 padding: 3px;
+	
+	}
+.shouquan{ 
+	width: 650px; 
+	height: 1000px; 
+	
+	float: left;
+	border-top: 3px solid #3B5988;
+	}
+
+.sq_jxs a{ 
+	display: block;
+	height: 40px;
+	width: 100px;
+	border-top:3px solid #D76D00;
+	margin-top: -3px;
+	background: #FFFFFF;
+	line-height: 40px;
+	text-indent: 5px;
+	 color: #3b5998;
+	 font-family: "微软雅黑";
+	 float: left;
+	 border-left: 1px solid #ccc;
+	  }
+.shouquan p{ 
+	height: 40px;
+	background: #ECECEC;
+	width:549px;
+	float: left;
+	}
+.Firm{
+	 width:648px;
+	 float: left;
+	 border: 1px solid #CCCCCC;
+	 
+	 }
+.Firm ol li{
+	list-style:none;
+	height: 200px;
+	padding-left: 10px;
+	margin-top: 5px;
+
+}
+.Firm ol li:hover{
+	 border: 1px solid #D76D00;
+	 
+	
+}
+.main_dealer{
+	width:100%;
+	float: left;
+	margin-top: 30px;
+	
+}
+.bg_dealer{
+	 background:url(../temp/bg-dealer.png) no-repeat;
+	 height: 30px;
+	 width:20px ;
+	 display: block;
+	 color: #FFFBE2;
+	 text-align: center;
+	 font-family: "微软雅黑";
+	 float: left;
+	
+	
+}
+.wujiaoxing{
+	  background: url(../temp/icon_img.png) no-repeat;
+	  height: 15px;
+	  width: 74px;
+	  float: left;
+   cursor: pointer;
+   margin: 8px 0px;
+	 }
+.dealer_name{ 
+	float: left;
+	 margin: 5px 10px;
+	}	 
+.main_info{
+	 float: left;
+	 width: 100%;
+	 
+	 
+	 }	 
+.info_img{ 
+	width: 75px;
+	height: 75px;
+	float: left;
+    border: 1px solid #CCCCCC;
+	
+	
+	 }	 
+.info_content{
+    float: left;
+    
+	
+}	 
+
+.main_info dl dt{
+	 margin-left: 20px;
+	 font-size: 14px;
+	 width:500px;
+	 color:#575859;
+	 margin-bottom: 10px;
+	
+	 
+	
+}	
+.info_value{
+	height: 8px;
+    display: inline-block;
+    background-color: #57b;
+     position: absolute;
+  
+  
+} 
+.jdt{
+	 width:66px;
+	 height: 8px;
+	 float: right;
+	 border: 1px solid #CCCCCC;
+	 position: relative;
+	 margin-right: 100px;
+	 margin-top: 5px;
+	 }	 
+.map{ 
+	float: right;
+	width: 300px;
+	height: 550px;
+	
+	
+	}	 
+ .dealer_new{
+
+ 	margin: 5px 0px;
+ 	
+ 	 
+ 	 
+ }
+		 
+
+/*.dealer_list a:hover{
+	background: #FFFBE2;
+	border-top: 3px solid #f4c44f;
+	margin-top: -3px;
+}	 */
+	
+.dealer_news{
+	width:100%;
+	height:100px;
+	display: none;
+	
+	
+}	 
+.dealer_news ul li{
+	list-style-type:disc;
+	font-size: 12px;
+	color:#32418c ;
+	font-family: "bodoni mt";
+	line-height: 20px;
+	margin-left: 15px;	
+}	
+
+.dealer_news ul li span{
+	list-style-type:disc;
+	font-size: 12px;
+	color:#32418c ;
+	font-family: "bodoni mt";
+	line-height: 20px;
+	 float: right;
+	 color: #CCCCCC;
+
+}
+.dealer_news ul li a{
+	
+	font-size: 12px;
+	color:#32418c ;
+	font-family: "bodoni mt";
+	
+	
+}
+.dealer_news ul li a:hover{
+	
+	
+	color: #0051AA;
+	
+	
+	
+}
+		  
+#new_main{
+	width: 100%;
+	height:100px;
+	overflow: hidden;
+	border:1px solid #CCCCCC;
+
+}	
+#else{ 
+	width: 100%;
+   	float:left;
+   	height: 494px;
+   	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+#else .else_title{
+	background:#dddfe3;
+	color: #003399;
+	line-height: 40px;
+	text-indent: 10px;
+	border-bottom: 1px solid #CCCCCC;
+	float: left;
+	width: 100%;
+	
+}
+.else_title img{
+	display: block;
+	float: right;
+ 	margin-top: 13px;
+    margin-right: 500px;
+
+}
+.else_dealer{
+	 width: 100%;
+	 float: left;
+}
+.else_one,.else_two,.else_three{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.else_one ul li,.else_two ul li,.else_three ul li{ 
+   list-style: none;
+   float: left;
+   height:130px;
+   width:49%;
+   margin: 0px 1px;
+   
+}
+.huise{
+	color: #CECECE;
+	font-size: 12px;
+	display: inline-block;
+	margin-left: 15px;
+}
+.else_one ul li dl dt,.else_two ul li dl dt,.else_three ul li dl dt{
+	font-family: "微软雅黑";
+	font-size: 14px;
+	
+	padding-left:10px;
+	margin-top: 10px;
+}
+
+#dealer_more{
+	width: 100%;
+	margin: 0 auto;
+	float: left;
+	text-align: center; 
+}
+#dealer_more a{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	
+	
+}
+#news1{
+	width: 100%;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	height: 200px;
+	margin-top:3px;
+	
+}
+.footer_nav{
+	width: 100%;
+	background: #e8ecee;
+	height: 40px;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	
+}
+.footer_nav a{
+	width:100px;
+	float: left;
+	height: 40px;
+	
+	color: #32418c;
+	text-align: center;
+	display: block;
+	line-height:40px;
+	
+}
+
+
+.footer_nav a.hover_news{
+	background: #FFFFFF;
+	border-top: 3px solid #f4c44f;
+	margin-top: -2px;
+	border-bottom: 1px solid #FFFFFF;
+	border-right:1px solid #CCCCCC;
+	font-weight: bold;
+	
+}
+#main_news{
+	width: 100%;
+	height: 150px;
+	border-bottom: 1px solid #CCCCCC;
+	margin-top: 5px;
+	float: left;
+	
+	
+}	
+.new_con{
+	float: left;
+	height: 130px;
+	width: 49%;
+	margin: 0px 1px;
+	
+}
+.new_con ul li{
+	 list-style-type:disc;
+	 margin-left: 20px;
+	 line-height: 30px;
+	 font-size: 12px;
+	
+}
+.new_con ul li span{
+	 
+	float: right;
+	margin-right: 10px;
+	 line-height: 30px;
+	 color: #CCCCCC;
+	font-size: 12px;
+	
+}
+.new_con ul li a{
+	color: #32418c;
+}
+.new_con ul li a:hover{
+	color:blue;
+}
+.footer_news{
+	width: 100%;
+	height: 150px;
+}
+ol#xinwen li.xinwen_list{
+ list-style: none;
+ height: 150px;
+ width: 100%;
+ display: none;
+ 
+}
+.right_news{
+	border-top: 3px solid #32418c;
+	width: 100%;
+	background: #e8ecee;
+	height:30px;
+	float: left;
+	border-right: 1px solid #CCCCCC;
+	
+}
+.right_news a{
+	 width: 90px;
+	 display:inline-block;
+	 float:left;
+	 line-height: 30px;
+	color: #32418c;
+	font-family: "微软雅黑";
+	text-indent: 5px;
+	
+	
+}
+.right_news a.news_hover{
+	background: #FFFFFF;
+	border-top: 3px solid #f4c44f;
+	margin-top: -3px;
+	border-bottom: 1px solid #FFFFFF;
+	border-right:1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+
+}
+#link_footer{
+	width:960px;
+	height:200px;
+	
+	position:absolute;
+	top: 3200px;
+	left:195px;
+
+}
+.link_con{
+	border-top: 5px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	
+	height: 150px;
+	width: 100%;
+}
+.link_con a{ 
+   display: inline-block;
+   border-right: 1px solid #CCCCCC;
+   font-family: "微软雅黑";
+   font-size: 14px;
+   margin: 10px 40px;
+   float: left;
+   padding-right: 10px;
+   color: #32418c;
+   
+}
+
+.dealer-pinpai  a{
+	display: inline-block;
+	border-right: 1px solid #CCCCCC;
+	margin: 0px 10px;
+	padding-right: 10px;
+	 
+}
+.delaer-content{
+	width: 690px;
+	float: left;
+	height: 400px;
+	
+}
+ul.delaer-content li {
+	float: left;
+	height: 160px;
+	width: 45%;
+
+}
+ul.delaer-content li p {
+   color: #a8adaf;
+   font-size: 12px;
+	line-height:26px;
+	}
+.delaer-red{
+	color: red;
+	font-size: 16px;
+	margin: 0px 5px;
+}
+.delaer-bold{
+	font-weight: bold;
+}
+.delaer-huise{
+	color: #757879;
+	font-size: 12px;
+}
+.huodong{
+	width：960px;
+	height: 150px;
+	
+	
+}
+ .huodong ol.new-left{
+	width:340px;
+	float: left;
+	height: 150px;
+
+	margin: 0px 1px;
+}
+.huodong ol.new-left li{
+	font-size: 12px;
+     line-height: 30px;
+     list-style-type: disc;
+     margin-left: 20px;
+     color: #CACACA;
+   
+}
+.huodong ol.new-left li span{
+	color: #CCCCCC;
+	float: right;
+	font-size: 12px;
+	
+}
+.wenda-con{
+	font-weight: bold; 
+	font-size: 16px; 
+	color: #000000;
+	border-bottom: 3px solid #CCCCCC;
+	height: 30px;
+}
+.right-tiwen{
+	float: right;
+	font-size: 12px;
+	color: #CCCCCC;
+}
+.wenda{
+	width: 690px;
+	float: left;
+	height:200px;
+}
+
+
+
+
+
+
+
+
+
+
+
