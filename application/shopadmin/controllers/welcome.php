@@ -31,13 +31,14 @@ class Welcome extends CI_Controller {
 	}
 	public function index()
 	{
-		//$this->__isLogin();
+		$this->__isLogin();
 		$this->load->view('index/index');
 	}
 
 	#登录
 	public function islogin(){
-		
+		var_export($_POST);
+		exit();
 	}
 
 	private function __isLogin(){

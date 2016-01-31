@@ -26,5 +26,14 @@ class Login extends CI_Controller{
 			Hcommon::redirect(site_url('login/index'));
 		}
 	}
+	/**
+	*
+	*获取验证吗
+	*
+	*/
+	public function getCode(){
+		$this->load->helper('code');
+		Code::getArithmetic(95,30);
+	}
 }
 ?>
