@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href='http://fonts.useso.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>shopadmin/lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url() ?>shopadmin/lib/font-awesome/css/font-awesome.css">
 
@@ -113,7 +113,7 @@ function changeCode(){
                 </div>
                 <div class="form-group">
                 <label>VerifyCode</label>
-                    <input type="password" name="text" class="form-controlspan12 form-control" placeholder="请输入验证码"><br/>
+                    <input type="text" name="code" class="form-controlspan12 form-control" placeholder="请输入验证码"><br/>
                     <span><img src="<?php echo base_url(); ?>shopadmin/index.php/login/getcode" id="code" title='看不清，换一张'  onclick="changeCode()" style="vertical-align:middle;cursor:pointer;"/></span>
                 </div>
                 <a href="javascript:void(0)" id="sub_button"  onclick="submit_from()" class="btn btn-primary pull-right">立即登录</a>
@@ -147,21 +147,36 @@ function changeCode(){
 
         function submit_from(){
             var username=$("input[name='username']").val();
-            alert(username);
-        }
-        document.onkeydown=function(event){
-            var e = event || window.event || arguments.callee.caller.arguments[0];
-            if(e && e.keyCode==27){ // 按 Esc 
-                //要做的事情
-              }
-            if(e && e.keyCode==113){ // 按 F2 
-                 //要做的事情
-               }            
-             if(e && e.keyCode==13){ // enter 键
-                window.document.getElementById('sub_button').click();
-                 
+            var password=$("input[name='password']").val();
+            var code=$("input[name='code']").val();
+            if(username==''){
+                _mpAlert('请输入用户名');
             }
-        }; 
+
+            if(password==''){
+                _mpAlert('请输入密码');
+            }
+            if(code==''){
+                _mpAlert('请输入验证码');
+            }
+            $.post('<?php echo base_url() ?>shopadmin/index.php/welcome/islogin',{username:username,password:password,code:code},function(data){
+                alert(data);
+            });
+            //_mpAlert(username);
+        }
+        // document.onkeydown=function(event){
+        //     var e = event || window.event || arguments.callee.caller.arguments[0];
+        //     if(e && e.keyCode==27){ // 按 Esc 
+        //         //要做的事情
+        //       }
+        //     if(e && e.keyCode==113){ // 按 F2 
+        //          //要做的事情
+        //        }            
+        //      if(e && e.keyCode==13){ // enter 键
+        //         window.document.getElementById('sub_button').click();
+                 
+        //     }
+        // }; 
     </script>
     
   

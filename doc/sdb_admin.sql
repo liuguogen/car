@@ -3,9 +3,13 @@ create table sdb_admin (
 	username varchar(50) not null comment '用户名',
 	password varchar(50) not null comment '密码',
 	ip varchar(100) default null comment '注册ip',
-	juri longtext comment '权限'
+	login_type varchar(30)  default null comment '账户类型',
+	createtime int(10) default null comment '创建时间',
+	disabled enum('false','true') not null default 'false' comment '是否禁用',
+	juri longtext comment '权限',
+	UNIQUE KEY (username)
 	)engine=innodb default charset=utf8;
-
+insert into `sdb_admin` (username,password,login_type,createtime) VALUES ('admin','d033e22ae348aeb5660fc2140aec35850c4da997','shopadmin',1454235333)
 -- CREATE TABLE `sdb_ome_orders` (
 --   `order_id` int(10) unsigned NOT NULL AUTO_INCREMENT,
 --   `order_bn` varchar(32) NOT NULL,
