@@ -31,22 +31,18 @@ class Welcome extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->__isLogin();
+
+		//$this->__isLogin();
 		$this->load->view('index/index');
 	}
 
 	#登录
 	public function islogin(){
-		$sql="select * from admin where username=? and password=?";
-		$where=array('admin','d033e22ae348aeb5660fc2140aec35850c4da997');
-		//$r=$this->db->query("select * from ".$this->db->dbprefix('tablename')."admin");
-		//$r=$this->db->query($sql,$where);
-		//$r=$this->db->select('id,username,password,login_type')->from('admin')->where(array('username'=>'admin','password'=>'d033e22ae348aeb5660fc2140aec35850c4da997'))->limit(0,1)->get();
-		var_export($this->db->dbprefix('admin'));exit();
 		session_start();
 		$username=Hcommon::dowith_sql(filter_var($this->input->post('username'),FILTER_SANITIZE_STRING));
 		$password=Hcommon::dowith_sql(filter_var(sha1($this->input->post('password'))),FILTER_SANITIZE_STRING);
 		$code=Hcommon::dowith_sql(filter_var($this->input->post('code'),FILTER_SANITIZE_STRING));
+		//var_export($_SESSION);exit();
 		$truecode=$_SESSION['code'];
 		//var_export($truecode);
 		//exit();
@@ -55,8 +51,18 @@ class Welcome extends CI_Controller {
 		}
 		$this->load->model('shopadmin_model','shopadmin');
 		$rRow=$this->shopadmin->checkLogin($username,$password);
-		echo "<pre>";
-		var_export($rRow);exit();
+		if($rRow){
+			$user=array(
+				'userid'=>$rRow['id'],
+				'username'=>$rRow['username'],
+				'login_type'=>$rRow['login_type'],
+			);
+			$this->session->set_userdata('member',$user);
+			Hcommon::outjson(array("req"=>'ok',"msg"=>'登录成功',"url"=>base_url()."shopadmin/index.php/welcome/index"));
+		}else{
+			Hcommon::outjson(array("req"=>'error',"msg"=>'用户名或密码错误'));
+		}
+
 	}
 
 	private function __isLogin(){

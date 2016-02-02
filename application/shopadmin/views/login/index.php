@@ -160,7 +160,11 @@ function changeCode(){
                 _mpAlert('请输入验证码');
             }
             $.post('<?php echo base_url() ?>shopadmin/index.php/welcome/islogin',{username:username,password:password,code:code},function(data){
-                alert(data);
+                var d=$.parseJSON(data);
+                if(d.req=='ok'){
+                    window.location.href=d.url;
+                    //alert(d.url);
+                }
             });
             //_mpAlert(username);
         }

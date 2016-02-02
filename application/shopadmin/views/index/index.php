@@ -7,11 +7,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <link href='http://fonts.useso.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css">
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>shopadmin/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>shopadmin/lib/font-awesome/css/font-awesome.css">
 
-    <script src="lib/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>shopadmin/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
 
         <script src="lib/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
     <script type="text/javascript">
@@ -21,8 +21,8 @@
     </script>
 
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/premium.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>shopadmin/stylesheets/theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>shopadmin/stylesheets/premium.css">
 
 </head>
 <body class=" theme-blue">
@@ -373,7 +373,7 @@
     </div>
 
 
-    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <script src="<?php echo base_url(); ?>shopadmin/lib/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
         $("[rel=tooltip]").tooltip();
         $(function() {
