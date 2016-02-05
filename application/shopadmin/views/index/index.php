@@ -22,15 +22,15 @@
     <div class="content">
         <div class="header">
             <div class="stats">
-    <p class="stat"><span class="label label-info">5</span> Tickets</p>
+    <!-- <p class="stat"><span class="label label-info">5</span> Tickets</p>
     <p class="stat"><span class="label label-success">27</span> Tasks</p>
-    <p class="stat"><span class="label label-danger">15</span> Overdue</p>
+    <p class="stat"><span class="label label-danger">15</span> Overdue</p> -->
 </div>
 
-            <h1 class="page-title">Dashboard</h1>
+            <h1 class="page-title">后台管理</h1>
                     <ul class="breadcrumb">
-            <li><a href="index.html">Home</a> </li>
-            <li class="active">Dashboard</li>
+            <li><a href="<?php echo base_url() ?>shopadmin/index.php/welcome/index">Home</a> </li>
+            <li class="active">&nbsp;</li>
         </ul>
 
         </div>
@@ -74,7 +74,7 @@
     </div>
 
 <div class="row">
-    <div class="col-sm-6 col-md-6">
+    <!-- <div class="col-sm-6 col-md-6">
         <div class="panel panel-default">
             <div class="panel-heading no-collapse">Not Collapsible<span class="label label-warning">+10</span></div>
             <table class="table table-bordered table-striped">
@@ -214,16 +214,16 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 
-            <footer>
+            <!-- <footer>
                 <hr>
 
                 
                 <p class="pull-right">Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
                 <p>© 2014 <a href="#" target="_blank">Portnine</a></p>
-            </footer>
+            </footer> -->
         </div>
     </div>
 
