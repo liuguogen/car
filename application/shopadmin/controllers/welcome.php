@@ -32,7 +32,7 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 
-		//$this->__isLogin();
+		$this->__isLogin();
 		$this->load->view('index/index');
 	}
 
@@ -57,7 +57,7 @@ class Welcome extends CI_Controller {
 				'username'=>$rRow['username'],
 				'login_type'=>$rRow['login_type'],
 			);
-			$this->session->set_userdata('member',$user);
+			$this->session->set_userdata('user',$user);
 			Hcommon::outjson(array("req"=>'ok',"msg"=>'登录成功',"url"=>base_url()."shopadmin/index.php/welcome/index"));
 		}else{
 			Hcommon::outjson(array("req"=>'error',"msg"=>'用户名或密码错误'));

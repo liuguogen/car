@@ -4,18 +4,19 @@
     <title>慧车网</title>
     
     <link href="<?php echo base_url() ?>assets/css/globla.css" rel="stylesheet" type="text/css">
-    <script src="<?php echo base_url() ?>assetscss/jquery-1.7.1.min.js" type="text/javascript"></script>
-     <script src="<?php echo base_url() ?>assetscss/globla1.js" type="text/javascript"></script>
-    <script src="<?php echo base_url() ?>assetsindex.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>assets/css/jquery-1.7.1.min.js" type="text/javascript"></script>
+     <script src="<?php echo base_url() ?>assets/css/globla1.js" type="text/javascript"></script>
+    <script src="<?php echo base_url() ?>assets/css/index.js" type="text/javascript"></script>
     <script src="<?php echo base_url() ?>assets/css/gallery.js" type="text/javascript"></script>
     <link href="<?php echo base_url() ?>assets/css/index.css" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="<?php echo base_url() ?>assets/css/banner.js"></script>
-    
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/css/banner.js"></script>  
+
 </head>
 <body>
 <div class="header borbot">
     <div class="top container">
-        <div class="index"><a href="index2.html">慧车首页</a></div>
+        <div class="index"><a href="#">慧车首页</a></div>
+
         <div class="curcity">南京</div>
         <ul class="dropdown">
             <li class="drop">
@@ -48,12 +49,11 @@
             <a href="#" class="button base" style="color:#fff; background:#000;border:0;">登陆</a>
             </form>
         </div>
-        <div style="clear:both"></div>
     </div>
 </div>
-<div class="header">
+<div class="header" style="background-image: url(<?php echo base_url() ?>assets/images/yellow.png);background-repeat: repeat-x;background-position: left top;background-size: 100% 36px">
     <div class="container">
-        <div class="logo"><a href="index2.html" class="logo-index"><img src="<?php echo base_url(); ?>assets/images/logo.png" alt=""></a></div>
+        <div class="logo"><a href="index.html" class="logo-index"><img style="border-width: 0" src="<?php echo base_url() ?>assets/images/logo.png" alt=""></a></div>
         <div class="menu">
             <div class="top">
                 <a href="yangche.html">用车养车</a>
@@ -87,7 +87,7 @@
     <div class="clear"></div>
 </div>
 <div class="main">
-    <!--<div class="ad container"><img alt="" src="temp/ad1.png" height="100" /></div>-->
+    <!--<div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png" height="100" /></div>-->
     <!--广告位-->
     <div class="ad50 container">
         <img src="" alt="900*50广告位">       
@@ -103,8 +103,8 @@
 
     <div class="container">
         <div class="tabtop" id="tab_nav">
-            <div class="item hov_ave">热门车</div>
-            <div class="item">新车</div>
+            <div class="item hov_ave" onmouseover="">热门车</div>
+            <div class="item ">新车</div>
             <div class="item">5万以下</div>
             <div class="item">5-8万</div>
             <div class="item">8-12万</div>
@@ -119,30 +119,31 @@
         <div class="tabmark">
            <div id="main_tab">
               <ul>
-                    <li style="display: none;">
+                    <li style="display:block">
                       <div class="left" id="tab_con">
-                        <a href="0" id="arrow">平行进口</a>
-                        <a href="1">平行进口</a>
-                        <a href="2">平行进口</a>
-                        <a href="3">平行进口</a>
-                        <a href="4">平行进口</a>
-                        <a href="5">平行进口</a>
-                        <a href="6">平行进口</a>
-                        <a href="7">风云2</a>
-                        <a href="8">比亚迪F3</a>
+                      <dt><a href="0" id="arrow">平行进口 ></a></dt>
+                        <a href="1">风云1</a>
+                        <a href="2">比亚迪F3</a>
+                        <a href="3">比亚迪F3</a>
+                        <a href="4">比亚迪F3</a>
+                        <a href="5">比亚迪F3</a>
+                        <a href="6">比亚迪F3</a>
+                         <dt><a href="0" id="arrow">紧凑车型 ></a></dt>
+                        <a href="7">比亚迪F3</a>
+                  
                         <a href="9">宝骏630</a>
                         <a href="10">晶睿</a>
                         <a href="11">威驰</a>
                         <a href="12">宝马</a>
                         <a href="13">长城F4</a>
-                        <a href="14">海马</a>
+                     <dt><a href="0" id="arrow">中型轿车&nbsp;></a></dt>
                         <a href="15">长安汽车</a>
                         <a href="16">海马M3</a>
                         <a href="17">悦翔V7</a>
                         <a href="18">远景</a>
                         <a href="19">飞驰</a>
                         <a href="20">雷诺</a>
-                        <a href="21">皮卡</a>
+                        <dt><a href="0" id="arrow"> SUV车&nbsp;&nbsp;&nbsp;></a></dt>
                         <a href="22">五菱</a>
                         <a href="23">汉兰达</a>
                         <a href="24">宝骏560</a>
@@ -316,7 +317,7 @@
                     </div>
                    
                    </li>
-                   <li style="display: block;">
+                   <li style="display:none;">
                     <div class="left" id="tab_con">
                         <a href="168">翼搏</a>
                         <a href="169">宝来</a>
@@ -514,13 +515,17 @@
               </ul>
            </div>
             <div class="right">
-                <!-- <div class="img"><img alt="" src="temp/car1.png" /></div>
-                <div class="txt">
-                    <span class="title">赛欧3</span>
-                    <span class="price">5.99万-7.63万</span>
+            <div class="img"><img id="galleryPic" alt="" src="<?php echo base_url() ?>assets/temp/car1.png" /></div>
+                   <div class="txt">
+                   
+                      <a href="#" id="galleryPic1"class="price">5.99万-7.63万</a>
+                       <a href="#"  id="galleryPic2" class="title">赛欧3</a>
                     <a href="">官网</a>|<a href="">图片</a>|<a href="">配置</a>
-                </div> -->
-                <img id="galleryPic" src="temp/gallery90.jpg" alt="我是第186张品牌图片">               
+                 </div>
+                     
+                     
+                 
+                 
             </div>
           
             
@@ -550,106 +555,106 @@
     </div>
     <div class="container cars">
         <div class="item">
-            <img alt="" src="temp/car2.png">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/car2.png">
             <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_03.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_03.gif">
             <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_05.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_05.gif">
             <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_07.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_07.gif">
             <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_08.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_08.gif">
              <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_09.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_09.gif">
              <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_11.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_11.gif">
              <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="item">
-            <img alt="" src="temp/qiche_13.gif">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/qiche_13.gif">
             <div class="showItem">
-                <img src="temp/car2.png">
+                <img src="<?php echo base_url() ?>assets/temp/car2.png">
             </div>
         </div>
         <div class="clear"></div>
     </div>
-    <div class="ad container"><img alt="" src="temp/ad1.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png"></div>
     <!--首页banner图Start-->
     <div id="index_banner">
        <div class="index_con">
               <ul class="box_img">
                    <li>
                        <div class="left_image">
-                          <img src="temp/index_1.gif">
+                          <img src="<?php echo base_url() ?>assets/temp/index_1.gif">
                           <div class="banner_txt">敏捷灵活，动静之间尽显卓越风范</div>
                        </div>
                        <div class="right_image">
-                            <div class="img1"><img src="temp/index_2.gif"><div class="banner_txt">独领风潮 精英本色</div></div>
-                            <div class="img2"><img src="temp/index_3.gif"><div class="banner_txt">随时准备好上路疾驶</div></div>
-                            <div class="img1"><img src="temp/index_4.gif"><div class="banner_txt">尽可沉浸于享受，无需分心</div></div>
-                            <div class="img1" style="float:left; margin-right:0px;"><img src="temp/index_5.gif"><div class="banner_txt">领导时代，驾驭未来</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_2.gif"><div class="banner_txt">独领风潮 精英本色</div></div>
+                            <div class="img2"><img src="<?php echo base_url() ?>assets/temp/index_3.gif"><div class="banner_txt">随时准备好上路疾驶</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_4.gif"><div class="banner_txt">尽可沉浸于享受，无需分心</div></div>
+                            <div class="img1" style="float:left; margin-right:0px;"><img src="<?php echo base_url() ?>assets/temp/index_5.gif"><div class="banner_txt">领导时代，驾驭未来</div></div>
                        </div>
                    </li>
                    <li>
                        <div class="left_image">
-                          <img src="temp/index_6.gif">
+                          <img src="<?php echo base_url() ?>assets/temp/index_6.gif">
                           <div class="banner_txt">激活新力量新雅阁新力量新登场</div>
                        </div>
                        <div class="right_image">
-                            <div class="img1"><img src="temp/index_7.gif"><div class="banner_txt">想在你之前</div></div>
-                            <div class="img2"><img src="temp/index_8.gif"><div class="banner_txt">平稳征服人生曲折</div></div>
-                            <div class="img1"><img src="temp/index_9.gif"><div class="banner_txt">追求卓越、共创幸福</div></div>
-                            <div class="img1" style="float:left;margin-right: 0px;"><img src="temp/index_10.gif"><div class="banner_txt">中国新动力衡量价值新典范</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_7.gif"><div class="banner_txt">想在你之前</div></div>
+                            <div class="img2"><img src="<?php echo base_url() ?>assets/temp/index_8.gif"><div class="banner_txt">平稳征服人生曲折</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_9.gif"><div class="banner_txt">追求卓越、共创幸福</div></div>
+                            <div class="img1" style="float:left;margin-right: 0px;"><img src="<?php echo base_url() ?>assets/temp/index_10.gif"><div class="banner_txt">中国新动力衡量价值新典范</div></div>
                        </div>
                    </li>
                    <li>
                        <div class="left_image">
-                          <img src="temp/index_11.gif">
+                          <img src="<?php echo base_url() ?>assets/temp/index_11.gif">
                           <div class="banner_txt">和谐灵动，君子风范和谐生活新成员</div>
                        </div>
                        <div class="right_image">
-                            <div class="img1"><img src="temp/index_12.gif"><div class="banner_txt">雷霆动力，纵情千里</div></div>
-                            <div class="img2"><img src="temp/index_13.gif"><div class="banner_txt">心有多野未来就有多远</div></div>
-                            <div class="img1"><img src="temp/index_15.gif"><div class="banner_txt">领先科技的全球轿车让生活乐在新风</div></div>
-                            <div class="img1" style="float:left;margin-right: 0px;"><img src="temp/index_21.gif"><div class="banner_txt">给我一个美名送你一部靓车</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_12.gif"><div class="banner_txt">雷霆动力，纵情千里</div></div>
+                            <div class="img2"><img src="<?php echo base_url() ?>assets/temp/index_13.gif"><div class="banner_txt">心有多野未来就有多远</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_15.gif"><div class="banner_txt">领先科技的全球轿车让生活乐在新风</div></div>
+                            <div class="img1" style="float:left;margin-right: 0px;"><img src="<?php echo base_url() ?>assets/temp/index_21.gif"><div class="banner_txt">给我一个美名送你一部靓车</div></div>
                        </div>
                    </li>
                    <li>
                        <div class="left_image">
-                          <img src="temp/index_22.gif">
+                          <img src="<?php echo base_url() ?>assets/temp/index_22.gif">
                           <div class="banner_txt">精致生活精彩演绎</div>
                        </div>
                        <div class="right_image">
-                            <div class="img1"><img src="temp/index_23.gif"><div class="banner_txt">空间超乎想象生活飞越平凡</div></div>
-                            <div class="img2"><img src="temp/index_24.gif"><div class="banner_txt">超越期待的经典车</div></div>
-                            <div class="img1"><img src="temp/index_25.gif"><div class="banner_txt">―路激情共精彩</div></div>
-                            <div class="img1" style="float:left;margin-right: 0px;"><img src="temp/index_26.gif"><div class="banner_txt">一步到位的好车</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_23.gif"><div class="banner_txt">空间超乎想象生活飞越平凡</div></div>
+                            <div class="img2"><img src="<?php echo base_url() ?>assets/temp/index_24.gif"><div class="banner_txt">超越期待的经典车</div></div>
+                            <div class="img1"><img src="<?php echo base_url() ?>assets/temp/index_25.gif"><div class="banner_txt">―路激情共精彩</div></div>
+                            <div class="img1" style="float:left;margin-right: 0px;"><img src="<?php echo base_url() ?>assets/temp/index_26.gif"><div class="banner_txt">一步到位的好车</div></div>
                        </div> 
                    </li>
               </ul>
@@ -676,15 +681,15 @@
       <!--首页切换按钮end-->
       <!--首页banner图end-->
     <div class="container">
-        <div class="newply" fid="0" style=" background-image:url(temp/newplay1.png);">
+        <div class="newply" fid="0" style=" background-image:url(<?php echo base_url() ?>assets/temp/newplay1.png);">
             <div class="bar">
                 <div class="txt">北京现代瑞纳上市</div>
                 <div class="lst">
-                    <span fsrc="temp/newplay1.png" ftxt="北京现代瑞纳上市" class="cur">1</span>
-                    <span fsrc="temp/newplay2.png" ftxt="瑞纳上市北京现代">2</span>
-                    <span fsrc="temp/newplay3.png" ftxt="北京现代瑞纳上市">3</span>
-                    <span fsrc="temp/newplay1.png" ftxt="瑞纳上市北京现代">4</span>
-                    <span fsrc="temp/newplay2.png" ftxt="现代瑞北纳京上市">5</span>
+                    <span fsrc="<?php echo base_url() ?>assets/temp/newplay1.png" ftxt="北京现代瑞纳上市" class="cur">1</span>
+                    <span fsrc="<?php echo base_url() ?>assets/temp/newplay2.png" ftxt="瑞纳上市北京现代">2</span>
+                    <span fsrc="<?php echo base_url() ?>assets/temp/newplay3.png" ftxt="北京现代瑞纳上市">3</span>
+                    <span fsrc="<?php echo base_url() ?>assets/temp/newplay1.png" ftxt="瑞纳上市北京现代">4</span>
+                    <span fsrc="<?php echo base_url() ?>assets/temp/newplay2.png" ftxt="现代瑞北纳京上市">5</span>
                 </div>
             </div>
         </div>
@@ -709,7 +714,7 @@
             </div>
         </div>
             <div class="panhang">
-                <div class="tit">论坛精华</div>
+                <div class="tit">厂商动态</div>
                 <a href="" class="more">更多&gt;&gt;</a>
                 <div class="lst">
                     <div class="item"><a href="#">30万上下的车能差</a><span>556487</span></div>
@@ -718,11 +723,12 @@
                     <div class="item"><a href="#">雪铁龙品牌历史回</a><span>556487</span></div>
                     <div class="item"><a href="#">满心欢喜广州首提</a><span>556487</span></div>
                     <div class="item"><a href="#">价格公布 全新Jee</a><span>556487</span></div>
+                    <div class="item"><a href="#">价格公布 全新Jee</a><span>556487</span></div>
                     <div class="item"><a href="#">选来选去，宝来最爱</a><span>556487</span></div>
                     <div class="item"><a href="#">Jeep自由光 购车</a><span>556487</span></div>
                     <div class="item"><a href="#">小手一抖 车币拿走</a><span>556487</span></div>
                 </div>
-                <div class="join"><a href="#">加入慧车友会，北纳京代</a></div>
+             
             </div>
         <div class="clear"></div>
     </div>
@@ -735,7 +741,7 @@
             </div>
             <div class="info">
                 <div class="first">
-                    <img alt="" src="temp/cs1.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/cs1.png">
                 </div>
                 <a class="fa" href="#">侧气囊存缺陷 本田在美召回30万辆雅阁</a>
                 <div class="lst">
@@ -785,7 +791,7 @@
             <div class="lst">
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/car3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car3.png">
                     </div>
                     <div class="txt">长城飞涨C66</div>
                     <div class="dei">
@@ -795,7 +801,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/car2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car2.png">
                     </div>
                     <div class="txt">进口三菱汽车</div>
                     <div class="dei">
@@ -805,7 +811,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/car1.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car1.png">
                     </div>
                     <div class="txt">比亚迪</div>
                     <div class="dei">
@@ -815,7 +821,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/car4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car4.png">
                     </div>
                     <div class="txt">进口车型</div>
                     <div class="dei">
@@ -839,23 +845,23 @@
             <div class="content_list">
                 <ul class="box">
                     <li>
-                         <a href=""><img src="temp/gd.gif"></a>
+                         <a href=""><img src="<?php echo base_url() ?>assets/temp/gd.gif"></a>
                          <div class="txt">豪华跑车</div>
                     </li>
                     <li>
-                        <a href=""><img src="temp/gd2.png"></a>
+                        <a href=""><img src="<?php echo base_url() ?>assets/temp/gd2.png"></a>
                         <div class="txt">全新的奔驰</div>
                     </li>
                     <li>
-                       <a href=""> <img src="temp/gd2.png"></a>
+                       <a href=""> <img src="<?php echo base_url() ?>assets/temp/gd2.png"></a>
                         <div class="txt">悍马的时代</div>
                     </li>
                     <li>
-                        <a href=""><img src="temp/gd3.png"></a>
+                        <a href=""><img src="<?php echo base_url() ?>assets/temp/gd3.png"></a>
                         <div class="txt">菲翔汽车</div>
                     </li>
                     <li>
-                        <a href=""><img src="temp/gd4.png"></a>
+                        <a href=""><img src="<?php echo base_url() ?>assets/temp/gd4.png"></a>
                         <div class="txt">速度与激情</div>
                     </li>
                 </ul>
@@ -873,31 +879,31 @@
         <div id="city_5"></div>
         <!--<div class="item">
             <div class="img">
-                <img alt="" src="temp/car8.png" />
+                <img alt="" src="<?php echo base_url() ?>assets/temp/car8.png" />
             </div>
             <div class="txt">全新一代保时捷911</div>
         </div>
         <div class="item">
             <div class="img">
-                <img alt="" src="temp/car8.png" />
+                <img alt="" src="<?php echo base_url() ?>assets/temp/car8.png" />
             </div>
             <div class="txt">全新一代保时捷911</div>
         </div>
         <div class="item">
             <div class="img">
-                <img alt="" src="temp/car8.png" />
+                <img alt="" src="<?php echo base_url() ?>assets/temp/car8.png" />
             </div>
             <div class="txt">全新一代保时捷911</div>
         </div>
         <div class="item">
             <div class="img">
-                <img alt="" src="temp/car8.png" />
+                <img alt="" src="<?php echo base_url() ?>assets/temp/car8.png" />
             </div>
             <div class="txt">全新一代保时捷911</div>
         </div>
         <div class="item">
             <div class="img">
-                <img alt="" src="temp/car8.png" />
+                <img alt="" src="<?php echo base_url() ?>assets/temp/car8.png" />
             </div>
             <div class="txt">全新一代保时捷911</div>
         </div>-->
@@ -911,31 +917,31 @@
         </div>
         <div class="item">
             <div class="img">
-               <a href="#"> <img alt="" src="temp/index_14.gif"></a>
+               <a href="#"> <img alt="" src="<?php echo base_url() ?>assets/temp/index_14.gif"></a>
             </div>
             <div class="txt">大嘴说车 斯巴鲁brz</div>
         </div>
         <div class="item">
             <div class="img">
-              <a href="#">  <img alt="" src="temp/index_16.gif"></a>
+              <a href="#">  <img alt="" src="<?php echo base_url() ?>assets/temp/index_16.gif"></a>
             </div>
             <div class="txt">易车体验 试驾ct200h</div>
         </div>
         <div class="item">
             <div class="img">
-                <a href="#"> <img alt="" src="temp/index_18.gif"></a>
+                <a href="#"> <img alt="" src="<?php echo base_url() ?>assets/temp/index_18.gif"></a>
             </div>
             <div class="txt">易车体验 数据横评s6ol</div>
         </div>
         <div class="item">
             <div class="img">
-                <a href="#"><img alt="" src="temp/index_20.gif"></a>
+                <a href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/index_20.gif"></a>
             </div>
             <div class="txt">新马3对比副克高尔夫</div>
         </div>
         <div class="item">
             <div class="img">
-               <a href="#"> <img alt="" src="temp/index_18.gif"></a>
+               <a href="#"> <img alt="" src="<?php echo base_url() ?>assets/temp/index_18.gif"></a>
             </div>
             <div class="txt">易车体验试驾</div>
         </div>
@@ -961,39 +967,39 @@
             <a href="#">更多&gt;&gt;</a>
         </div>
         <div class="clear"></div>
-        <a class="left" href="#" style=" background:url(temp/pson1.png) no-repeat; ">
+        <a class="left" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/pson1.png) no-repeat; ">
             <div class="ht">拍美女</div>
             <div class="txt">美女和汽车</div>
         </a>
         <div class="right">
-            <a class="item" href="#" style=" background:url(temp/chemo.jpg) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/chemo.jpg) no-repeat;">
                 <div class="ht">画汽车</div>
                 <div class="txt">好在养女，象征一世。</div>
             </a>
-            <a class="item" href="#" style=" background:url(temp/newplay2.png) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/newplay2.png) no-repeat;">
                 <div class="ht">赏模型</div>
                 <div class="txt">美女和汽车的世界</div>
             </a>
-            <a class="item" href="#" style=" background:url(temp/1.jpg) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/1.jpg) no-repeat;">
                 <div class="ht">自驾游</div>
                 <div class="txt">性感妖艳车模大放异彩。</div>
             </a>
-            <a class="item" href="#" style=" background:url(temp/yc.png) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/yc.png) no-repeat;">
                 <div class="ht">玩摄影</div>
                 <div class="txt">汽车的魅力</div>
             </a>
-            <a class="item" href="#" style=" background:url(temp/yc5.png) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/yc5.png) no-repeat;">
                 <div class="ht">拍美女</div>
                 <div class="txt">帅气的车型外包</div>
             </a>
-            <a class="item" href="#" style=" background:url(temp/yc6.png) no-repeat;">
+            <a class="item" href="#" style=" background:url(<?php echo base_url() ?>assets/temp/yc6.png) no-repeat;">
                 <div class="ht">爱汽车</div>
                 <div class="txt">好在汽车，象征一世。</div>
             </a>
         </div>
         <div class="clear"></div>
     </div>
-    <div class="ad container"><img alt="" src="temp/ad1.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png"></div>
     <div class="info1 container">
         <div class="left1">
             <div class="title">南京最大的查俄罗斯大的查的查俄</div>
@@ -1059,10 +1065,10 @@
         </div>
         <div class="right">
             <div class="img">
-                <img alt="" src="temp/ad4.png">
+                <img alt="" src="<?php echo base_url() ?>assets/temp/ad4.png">
             </div>
             <div class="tab">
-                <a href="#" class="m">4S促销</a>|<a href="#">港口促销</a>
+                <a href="#" class="m">销售促销</a>|<a href="#">售后促销</a>
             </div>
             <ul class="right_nav">
                 <li><a href="#" title="新MINI JCW CLUBMAN谍照 或明年3月亮相">新MINI JCW CLUBMAN谍照 或明年3月亮相 </a></li>
@@ -1087,8 +1093,23 @@
         </div>
 
         <div class="news_list">
-            <div class="news_left"><span style=" font-weight:bold; margin-left:10px;">车友论坛&gt;&gt;</span>
+            <div class="news_left">
               <ul class="hidden">
+                 <li> <a href="#">曝东南DX3套壳测试车谍照</a></li>
+                <li><a href="#">曝东南DX3套壳测试车谍照</a></li>
+                <li><a href="#">沃尔沃V60 Cross Country上市 售39.99万</a></li>
+                <li><a href="#">2015中国新车质量榜北京现代位居主流</a></li>
+                <li><a href="#">广汽传祺将推两款全新SUV 或为GS6/GS8</a></li>
+                <li><a href="#">捷豹F-PACE国内谍照首次曝光 或将引入</a></li>
+                <li><a href="#">众泰大迈X5新车曝光 或命名“帝王型”</a></li>
+                <li><a href="#">或亮相广州车展 长安CS15内饰谍照曝光</a></li>
+                <li><a href="#">奥德赛配备本田计划推10速自动变速箱</a></li>
+              </ul>
+            </div>
+           
+            <div class="news_left">
+              <ul class="hidden">
+              <li><a href="#">曝东南DX3套壳测试车谍照 定位小型SUV</a></li>
                 <li><a href="#">曝东南DX3套壳测试车谍照 定位小型SUV</a></li>
                 <li><a href="#">沃尔沃V60 Cross Country上市 售39.99万</a></li>
                 <li><a href="#">2015中国新车质量榜北京现代位居主流</a></li>
@@ -1100,21 +1121,9 @@
               </ul>
             </div>
            
-            <div class="news_left"><a href="#" style=" font-weight:bold; margin-left:10px;">热门活动&gt;&gt;</a>
+            <div class="news_left">
               <ul class="hidden">
-                <li><a href="#">曝东南DX3套壳测试车谍照 定位小型SUV</a></li>
-                <li><a href="#">沃尔沃V60 Cross Country上市 售39.99万</a></li>
-                <li><a href="#">2015中国新车质量榜北京现代位居主流</a></li>
-                <li><a href="#">广汽传祺将推两款全新SUV 或为GS6/GS8</a></li>
-                <li><a href="#">捷豹F-PACE国内谍照首次曝光 或将引入</a></li>
-                <li><a href="#">众泰大迈X5新车曝光 或命名“帝王型”</a></li>
-                <li><a href="#">或亮相广州车展 长安CS15内饰谍照曝光</a></li>
-                <li><a href="#">奥德赛配备本田计划推10速自动变速箱</a></li>
-              </ul>
-            </div>
-           
-            <div class="news_left"><a href="#"><b style="margin-left:10px" ;="">车主分享&gt;&gt;</b></a>
-              <ul class="hidden">
+              <li><a href="#">2015中国新车质量榜北京现代位居主流</a></li>
                 <li><a href="#">曝东南DX3套壳测试</a></li>
                 <li><a href="#">沃尔沃V60 Cross Country</a></li>
                 <li><a href="#">2015中国新车质量榜北京现代位居主流</a></li>
@@ -1128,55 +1137,55 @@
         </div>
 
          <div class="car" style="margin-top:10px;">
-            <img alt="" src="temp/yc12.png">
-            <img alt="" src="temp/yc13.png">
-            <img src="temp/yc14.png" alt="" height="106">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/yc12.png">
+            <img alt="" src="<?php echo base_url() ?>assets/temp/yc13.png">
+            <img src="<?php echo base_url() ?>assets/temp/yc14.png" alt="" height="106">
         </div>
     </div>
 
     <div class="ad container">
-        <img alt="" src="temp/ad1.png">
+        <img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png">
     </div>
 
     <div class="carinfo container">
         <div class="left">
             <div class="title">热销车推荐</div>
-            <a class="item" href="#"><img alt="" src="temp/tj.png"><span>热销车热销车</span></a>
-            <a class="item" href="#"><img alt="" src="temp/tj2.png"><span>热销车热销车</span></a>
-            <a class="itemr" href="#"><img alt="" src="temp/tj3.png"><span>热销车热销车</span></a>
-            <a class="item" href="#"><img alt="" src="temp/tj4.png"><span>热销车热销车</span></a>
-            <a class="item" href="#"><img alt="" src="temp/tj5.png"><span>热销车热销车</span></a>
-            <a class="itemr" href="#"><img alt="" src="temp/tj2.png"><span>热销车热销车</span></a>
+            <a class="item" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj.png"><span>热销车热销车</span></a>
+            <a class="item" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png"><span>热销车热销车</span></a>
+            <a class="itemr" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png"><span>热销车热销车</span></a>
+            <a class="item" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png"><span>热销车热销车</span></a>
+            <a class="item" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png"><span>热销车热销车</span></a>
+            <a class="itemr" href="#"><img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png"><span>热销车热销车</span></a>
         </div>
         <div class="right">
             <div class="title">热门经销商</div>
             <div class="m">
                 <div class="item">
-                    <img alt="" src="temp/pson3.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/pson3.png">
                     <strong>江西五十铃汽车有限公司4S店</strong>
                     <span>南京建邺城防区33号</span>
                     <a href="#">向TA询问&gt;&gt;</a>
                 </div>
                 <div class="item">
-                    <img alt="" src="temp/pson3.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/pson3.png">
                     <strong>德尔福汽车系统公司</strong>
                     <span>国际采购部经理</span>
                     <a href="#">向TA询问&gt;&gt;</a>
                 </div>
                 <div class="item">
-                    <img alt="" src="temp/pson3.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/pson3.png">
                     <strong>中国第一汽车集团公司</strong>
                     <span>双龙大道辅路瑞阳居</span>
                     <a href="#">向TA询问&gt;&gt;</a>
                 </div>
                 <div class="item">
-                    <img alt="" src="temp/pson3.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/pson3.png">
                     <strong>东风标致福利4S店</strong>
                     <span>南京建邺城防区33号</span>
                     <a href="#">向TA询问&gt;&gt;</a>
                 </div>
                 <div class="item">
-                    <img alt="" src="temp/pson3.png">
+                    <img alt="" src="<?php echo base_url() ?>assets/temp/pson3.png">
                     <strong>北京汽车工业控股有限责任公司</strong>
                     <span>北京市</span>
                     <a href="#">向TA询问&gt;&gt;</a>
@@ -1185,7 +1194,7 @@
         </div>
         <div class="clear"></div>
     </div>
-    <div class="ad container"><img alt="" src="temp/ad1.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png"></div>
     <div class="hot container">
         <div class="left">
             <div class="title">热门车型</div>
@@ -1216,7 +1225,7 @@
                     <div class="item">40万以上</div>
                     <!--新增广告位-->
                     <div class="add_ad1">
-                        <img id="hotPic1" src="temp/galleryhot90.jpg" alt="我是第79张热门车型图片">
+                        <img id="hotPic1" src="<?php echo base_url() ?>assets/temp/galleryhot90.jpg" alt="我是第79张热门车型图片">
                     </div>
                 </div>
                 <div id="lst_list">
@@ -1224,70 +1233,70 @@
                        <li style="display: none;">
                        <div class="lst" id="lst_content">
                     <a href="0">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="1">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="2">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="3">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="4">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="5">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="6">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="7">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="8">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="9">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1299,70 +1308,70 @@
                        <li style="display: none;">
                      <div class="lst" id="lst_content">
                     <a href="10">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">11111速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="11">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="12">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="13">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="14">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="15">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="16">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="17">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="18">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="19">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1374,70 +1383,70 @@
                        
                          <div class="lst" id="lst_content">
                     <a href="20">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">22222速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="21">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="22">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="23">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="24">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="25">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="26">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="27">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="28">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="29">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1449,70 +1458,70 @@
                        <li style="display: none;">
                                <div class="lst" id="lst_content">
                     <a href="30">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">33333速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="31">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="32">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="33">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="34">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="35">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="36">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="37">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="38">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="39">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1524,70 +1533,70 @@
                        
                      <div class="lst" id="lst_content">
                     <a href="40">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">44444速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="41">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="42">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="43">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="44">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="45">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="46">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="47">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="48">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="49">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1599,70 +1608,70 @@
                        <li style="display: none;">
                             <div class="lst" id="lst_content">
                     <a href="50">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">5555速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="51">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="52">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="53">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="54">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="55">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="56">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="57">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="58">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="59">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1674,70 +1683,70 @@
                        <li style="display: none;">
                             <div class="lst" id="lst_content">
                     <a href="60">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">666666速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="61">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="62">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="63">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="64">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="65">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="66">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="67">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="68">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="69">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -1750,70 +1759,70 @@
                        
                          <div class="lst" id="lst_content">
                     <a href="70">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">7777速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="71">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="72">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="73">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="74">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="75">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="76">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="77">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="78">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
                         <span class="name">南京博从瑞东</span>
                     </a>
                     <a href="79">
-                        <img alt="" src="temp/car6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/car6.png">
                         <span class="txt">速腾 2015款 1.5SL MT 经典版</span>
                         <span class="price">11.66万</span>
                         <span class="dprice">10.21万</span>
@@ -2268,7 +2277,7 @@
         </div>
         <div class="clear"></div>
     </div>
-    <div class="ad container"><img alt="" src="temp/ad1.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png"></div>
     <div class="oldcar container">
         <div class="title">南京二手车</div>
         <a class="more" href="#">更多&gt;&gt;</a>
@@ -2313,12 +2322,12 @@
                 <div class="item sm">卖车</div>
             </div>
             <div id="tj_main">
-            	<ul>
-            		<li style="display: none;">
-            			 <div class="mar" id="tj_content">
+                <ul>
+                    <li style="display: none;">
+                         <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2327,7 +2336,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2336,7 +2345,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2345,7 +2354,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2354,7 +2363,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2363,7 +2372,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2372,7 +2381,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2381,7 +2390,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2389,12 +2398,12 @@
                     <div class="addr">南京</div>
                 </div>
             </div>
-            		</li>
-            		<li style="display: none;">
+                    </li>
+                    <li style="display: none;">
                 <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口)1111111</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2403,7 +2412,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2412,7 +2421,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2421,7 +2430,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2430,7 +2439,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2439,7 +2448,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2448,7 +2457,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2457,7 +2466,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2468,11 +2477,11 @@
                     
                     
                     </li>
-            		<li style="display: block;">
+                    <li style="display: block;">
                              <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口) 2222222</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2481,7 +2490,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2490,7 +2499,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2499,7 +2508,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2508,7 +2517,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2517,7 +2526,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2526,7 +2535,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2535,7 +2544,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2545,11 +2554,11 @@
             </div>
                     
                     </li>
-            		<li style="display: none;">
+                    <li style="display: none;">
                      <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口) 3333333</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2558,7 +2567,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2567,7 +2576,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2576,7 +2585,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2585,7 +2594,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2594,7 +2603,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2603,7 +2612,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2612,7 +2621,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2622,11 +2631,11 @@
             </div>
                     
                     </li>
-            		<li style="display: none;">
+                    <li style="display: none;">
                      <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口) 222222</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2635,7 +2644,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2644,7 +2653,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2653,7 +2662,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2662,7 +2671,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2671,7 +2680,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2680,7 +2689,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2689,7 +2698,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2698,12 +2707,12 @@
                 </div>
             </div>
                     </li>
-            		<li style="display: none;">
+                    <li style="display: none;">
                     
                      <div class="mar" id="tj_content">
                 <div class="item">
                     <div class="img">
-                      <img alt="" src="temp/tj.png">
+                      <img alt="" src="<?php echo base_url() ?>assets/temp/tj.png">
                     </div>
                     <div class="txt">跑车(进口) 555555</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2712,7 +2721,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj2.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj2.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2721,7 +2730,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj3.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj3.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2730,7 +2739,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj4.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj4.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2739,7 +2748,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj5.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj5.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2748,7 +2757,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2757,7 +2766,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj6.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj6.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2766,7 +2775,7 @@
                 </div>
                 <div class="item">
                     <div class="img">
-                        <img alt="" src="temp/tj7.png">
+                        <img alt="" src="<?php echo base_url() ?>assets/temp/tj7.png">
                     </div>
                     <div class="txt">奥迪A8(进口) 2010</div>
                     <div class="li">3年/4.3万公里</div>
@@ -2776,7 +2785,7 @@
             </div>
                     
                     </li>
-            	</ul>
+                </ul>
             </div>
             
             
@@ -2789,8 +2798,8 @@
        
         <div class="clear"></div>
     </div>
-    <div class="ad container"><img alt="" src="temp/tj8.png"></div>
-    <div class="ad container"><img alt="" src="temp/ad1.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/tj8.png"></div>
+    <div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png"></div>
     <div class="link container">
         <div class="title">
             <div></div>
@@ -2858,39 +2867,39 @@
 </div>
 
 <script type="text/javascript">
-	         $(document).ready(function() {
-				 var _index = 0;
+             $(document).ready(function() {
+                 var _index = 0;
                   $(".left_butt").click(function(){
-					   if(_index==0){
-					  $(".box").prepend($(".box").html());
-					  
-					  _index=6;
-					  }
-				_index--;
-				$(".box").stop().animate({left:-_index*195},500);
-					
+                       if(_index==0){
+                      $(".box").prepend($(".box").html());
+                      
+                      _index=6;
+                      }
+                _index--;
+                $(".box").stop().animate({left:-_index*195},500);
+                    
            })
-		   
-		    $(".right_butt").click(function(){
-				_index++;
-					 var len = $(".box li").length;
-					if(_index+5>len){
-						$(".box").stop().append($(".box").html());
-						}
-					  $(".box").stop().animate({left:-_index*195},500);
-				
-				});
-			
-		
-		   
-		   
+           
+            $(".right_butt").click(function(){
+                _index++;
+                     var len = $(".box li").length;
+                    if(_index+5>len){
+                        $(".box").stop().append($(".box").html());
+                        }
+                      $(".box").stop().animate({left:-_index*195},500);
+                
+                });
+            
+        
+           
+           
             });
-	      	 
-	      	
-	      	
-	      	
-	   
-	</script>
+             
+            
+            
+            
+       
+    </script>
     
     
 

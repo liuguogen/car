@@ -1,16 +1,31 @@
 window.onload= function(){
-	var linkCont = document.getElementById('main_tab');
-    var link = linkCont.getElementsByTagName('a');
+	var linkCont = document.getElementById('tab_nav');
+    var link = linkCont.getElementsByTagName('div');
     var pic = document.getElementById('galleryPic');
+	 var abc = document.getElementById('galleryPic1');
+	var abcd = document.getElementById('galleryPic2');
     //alert(link.length);
     for(var i=0;i<link.length;i++){
     	link[i].setAttribute("href",i);
     	link[i].onmouseover = function(){
     		//alert(link[i].innerHTML);
     		var flag = this.getAttribute("href");
-            pic.setAttribute("src","images/gallery"+i+".jpg");
+            pic.setAttribute("src","images/ga"+flag+".jpg");
             //alert(pic.getAttribute("src"));
             pic.setAttribute("alt","我是第"+flag+"张品牌图片");
+			 pic.setAttribute("src","我是第"+flag+"张品牌图片");
+        
+            abc.innerHTML="2"+flag+"万"+"-"+"4"+flag+"万"
+			 // abcd.innerHTML="奥"+flag+"迪"
+             if (flag == "0") {
+                    abcd.innerHTML="奥迪"
+                }
+             if (flag == "1") {
+                    abcd.innerHTML="宝马"
+                }
+             if (flag == "2") {
+                    abcd.innerHTML="玛莎拉蒂"
+                }   
     	}
     }
 

@@ -93,7 +93,7 @@ a:hover
     display:inline-block;
     height:30px;
     line-height:30px;
-    color:#7a7776;
+    color:#FFFFFF
 }
 .header .top .topright
 {
@@ -172,8 +172,7 @@ a:hover
 }
 .header .menu .car a
 {
-    background:url(../images/carlist.jpg) no-repeat;
-    background-position:0px 0px;
+    background:url(../images/carlist.jpg) no-repeat 0px 0px;
     width:81px;
     height:54px;
     display:block;
