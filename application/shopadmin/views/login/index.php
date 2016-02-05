@@ -104,15 +104,15 @@ function changeCode(){
         <div class="panel-body">
             <!-- <form action="<?php echo base_url() ?>shopadmin/index.php/welcome/islogin" method="POST"> -->
                 <div class="form-group">
-                    <label>Username</label>
+                    <label>用户名</label>
                     <input type="text" name="username" class="form-control span12" placeholder="请输入用户名">
                 </div>
                 <div class="form-group">
-                <label>Password</label>
+                <label>密码</label>
                     <input type="password" name="password" class="form-controlspan12 form-control" placeholder="请输入密码">
                 </div>
                 <div class="form-group">
-                <label>VerifyCode</label>
+                <label>验证码</label>
                     <input type="text" name="code" class="form-controlspan12 form-control" placeholder="请输入验证码"><br/>
                     <span><img src="<?php echo base_url(); ?>shopadmin/index.php/login/getcode" id="code" title='看不清，换一张'  onclick="changeCode()" style="vertical-align:middle;cursor:pointer;"/></span>
                 </div>
@@ -164,6 +164,9 @@ function changeCode(){
                 if(d.req=='ok'){
                     window.location.href=d.url;
                     //alert(d.url);
+                }
+                if(d.req=='errro'){
+                    _mpAlert(d.msg);
                 }
             });
             //_mpAlert(username);
