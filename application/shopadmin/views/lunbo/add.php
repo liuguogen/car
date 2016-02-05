@@ -10,10 +10,11 @@
     
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>shopadmin/lib/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>shopadmin/lib/font-awesome/css/font-awesome.css">
-
+    <link href="<?php echo base_url(); ?>shopadmin/css/uploadify.css" type="text/css" rel="stylesheet">
     <script src="<?php echo base_url(); ?>shopadmin/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
 
         <script src="<?php echo base_url(); ?>shopadmin/lib/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>shopadmin/js/jquery.uploadify.min.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
             $(".knob").knob();
@@ -93,14 +94,20 @@
 
 
     <div class="panel panel-default">
-        <a href="#page-stats" class="panel-heading" data-toggle="collapse">Latest Stats</a>
+        <a href="#page-stats" class="panel-heading" data-toggle="collapse">轮播图</a>
+        
         <div id="page-stats" class="panel-collapse panel-body collapse in">
-
+<input type="submit" value="提交"  onclick="return check_data();" class="panel-heading" style="width:80px;height:30px;border:none;background:#238623;color:white;font-weight:blod;font-family:'微软雅黑';border-radius:5px;margin-buttom:10px;margin:0 auto;"/>
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="knob-container">
                                 <!-- <input class="knob" data-width="200" data-min="0" data-max="3000" data-displayPrevious="true" value="2500" data-fgColor="#92A3C2" data-readOnly=true;> -->
+                                <input id="file_upload" name="file_upload" type="file" multiple="true">
                                 <h3 class="text-muted text-center">第一张轮播图</h3>
+                                <input type="hidden" name="thumb" value="">
+                                <div id="queue" style="margin-bottom:10px;">
+                                  <img src=""  style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;"/>
+                                 </div>
                             </div>
                         </div>
                         <!-- <div class="col-md-3 col-sm-6">
@@ -288,5 +295,36 @@
         });
     </script>
     
-  
+  <script type="text/javascript">
+  <?php $timestamp = time();?>
+  $(function(){
+   
+    $('#file_upload').uploadify({
+        'buttonText' : '选择文件',
+         'fileSizeLimit' : '500KB',
+        'fileTypeDesc' : '选择图片',
+         'fileTypeExts' : '*.gif; *.jpg;*.jpeg; *.png',
+         'fileObjName' : 'fileField',
+         'method'   : 'post',
+        'formData'     : {
+          'timestamp' : '<?php echo $timestamp;?>',
+          'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+        },
+        'swf'      : '<?php  echo base_url(); ?>shopadmin/swf/uploadify.swf',
+        'uploader' : "<?php echo base_url(); ?>shopadmin/index.php/lunbo/upload",
+        'onUploadSuccess':function(file,data,response){
+          if(response && data!='error'){
+             //if($("[name='thumb']").val()==''){
+            $("[name='thumb']").val(data);
+            alert(data);
+            
+            //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
+            $("#queue > img").attr('src',data);
+          //}
+          }
+        }
+      });
+
+  })
+  </script>
 </body></html>
