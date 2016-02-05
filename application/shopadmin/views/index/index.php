@@ -19,16 +19,7 @@
 
     <?php echo $this->load->view('header') ?>
 
-    <div class="content">
-        <div class="header">
-            <div class="stats">
-    <!-- <p class="stat"><span class="label label-info">5</span> Tickets</p>
-    <p class="stat"><span class="label label-success">27</span> Tasks</p>
-    <p class="stat"><span class="label label-danger">15</span> Overdue</p> -->
-</div>
-
-            <h1 class="page-title">后台管理</h1>
-                    <ul class="breadcrumb">
+    <ul class="breadcrumb">
             <li><a href="<?php echo base_url() ?>shopadmin/index.php/welcome/index">Home</a> </li>
             <li class="active">&nbsp;</li>
         </ul>

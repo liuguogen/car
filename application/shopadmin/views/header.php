@@ -13,7 +13,7 @@
 
     <script src="<?php echo base_url(); ?>shopadmin/lib/jquery-1.11.1.min.js" type="text/javascript"></script>
 
-        <script src="lib/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
+        <script src="<?php echo base_url(); ?>shopadmin/lib/jQuery-Knob/js/jquery.knob.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(function() {
             $(".knob").knob();
@@ -145,3 +145,13 @@
                 <li><a href="http://portnine.com/bootstrap-themes/aircraft" class="nav-header" target="blank"><i class="fa fa-fw fa-heart"></i> Get Premium</a></li>
             </ul> -->
     </div>
+     <div class="content">
+        <div class="header">
+            <div class="stats">
+    <p class="stat"><span class="label label-info">5</span> Tickets</p>
+    <p class="stat"><span class="label label-success">27</span> Tasks</p>
+    <p class="stat"><span class="label label-danger">15</span> Overdue</p>
+</div>
+
+            <h1 class="page-title">后台管理</h1>
+                   
