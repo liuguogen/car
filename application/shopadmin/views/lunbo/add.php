@@ -107,7 +107,7 @@
                                 <h3 class="text-muted text-center">第一张轮播图</h3>
                                 <input type="hidden" name="one_img" value="<?php echo $thumb['one_img'] ?>">
                                 <div id="one" style="margin-bottom:10px;">
-                                  <img src="<?php echo $thumb['one_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                  <img src="<?php if($thumb['one_img']){ echo $thumb['one_img'] ;}else{ echo base_url()."/assets/images/default.jpg" ;} ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
                                  </div>
                                  <div id="one" style="margin-left:50px;">
                                   URL地址：<input id="one_url" name="one_url" type="text" value="<?php echo $thumb['one_url'] ?>">
@@ -122,7 +122,7 @@
                                 <h3 class="text-muted text-center">第二张轮播图</h3>
                                 <input type="hidden" name="two_img" value="<?php echo $thumb['two_img'] ?>">
                                 <div id="two" style="margin-bottom:10px;">
-                                  <img src="<?php echo $thumb['two_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                  <img src="<?php if($thumb['two_img']){ echo $thumb['two_img'] ;}else{ echo base_url()."/assets/images/default.jpg" ;} ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
                                  </div>
                                  <div id="one" style="margin-left:50px;">
                                   URL地址：<input id="two_url" name="two_url" type="text" value="<?php echo $thumb['two_url'] ?>" />
@@ -137,7 +137,7 @@
                                 <h3 class="text-muted text-center">左侧轮播图</h3>
                                 <input type="hidden" name="three_img" value="<?php echo $thumb['three_img'] ?>">
                                 <div id="three" style="margin-bottom:10px;">
-                                  <img src="<?php echo $thumb['three_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                  <img src="<?php if($thumb['three_img']){ echo $thumb['three_img'] ;}else{ echo base_url()."/assets/images/default.jpg" ;} ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
                                  </div>
                                  <div id="three" style="margin-left:50px;">
                                   URL地址：<input id="three_url" name="three_url" type="text" value="<?php echo $thumb['three_url'] ?>" />
@@ -151,7 +151,7 @@
                                 <h3 class="text-muted text-center">右侧轮播图</h3>
                                 <input type="hidden" name="four_img" value="<?php echo $thumb['four_img'] ?>">
                                  <div id="four" style="margin-bottom:10px;">
-                                  <img src="<?php echo $thumb['four_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                  <img src="<?php if($thumb['four_img']){ echo $thumb['four_img'] ;}else{ echo base_url()."/assets/images/default.jpg" ;} ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
                                  </div>
                                  <div id="four" style="margin-left:50px;">
                                   URL地址：<input id="four_url" name="three_url" type="text" value="<?php echo $thumb['four_url'] ?>" />
