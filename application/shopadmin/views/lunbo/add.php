@@ -95,44 +95,75 @@
 
     <div class="panel panel-default">
         <a href="#page-stats" class="panel-heading" data-toggle="collapse">轮播图</a>
-        
+        <form method="POST" action="<?php echo base_url() ?>shopadmin/index.php/lunbo/addimg">
         <div id="page-stats" class="panel-collapse panel-body collapse in">
 <input type="submit" value="提交"  onclick="return check_data();" class="panel-heading" style="width:80px;height:30px;border:none;background:#238623;color:white;font-weight:blod;font-family:'微软雅黑';border-radius:5px;margin-buttom:10px;margin:0 auto;"/>
+                    <input type="hidden" value="<?php echo $thumb['id'] ?>" name="id" />
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="knob-container">
                                 <!-- <input class="knob" data-width="200" data-min="0" data-max="3000" data-displayPrevious="true" value="2500" data-fgColor="#92A3C2" data-readOnly=true;> -->
-                                <input id="file_upload" name="file_upload" type="file" multiple="true">
+                                <input id="one_imgs" name="one_imgs" type="file" multiple="true">
                                 <h3 class="text-muted text-center">第一张轮播图</h3>
-                                <input type="hidden" name="thumb" value="">
-                                <div id="queue" style="margin-bottom:10px;">
-                                  <img src=""  style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;"/>
+                                <input type="hidden" name="one_img" value="<?php echo $thumb['one_img'] ?>">
+                                <div id="one" style="margin-bottom:10px;">
+                                  <img src="<?php echo $thumb['one_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                 </div>
+                                 <div id="one" style="margin-left:50px;">
+                                  URL地址：<input id="one_url" name="one_url" type="text" value="<?php echo $thumb['one_url'] ?>">
+                                 </div>
+                                 
+                            </div>
+                        </div>
+                       <div class="col-md-3 col-sm-6">
+                            <div class="knob-container">
+                                <!-- <input class="knob" data-width="200" data-min="0" data-max="4500" data-displayPrevious="true" value="3299" data-fgColor="#92A3C2" data-readOnly=true;> -->
+                               <input id="two_imgs" name="two_imgs" type="file" multiple="true">
+                                <h3 class="text-muted text-center">第二张轮播图</h3>
+                                <input type="hidden" name="two_img" value="<?php echo $thumb['two_img'] ?>">
+                                <div id="two" style="margin-bottom:10px;">
+                                  <img src="<?php echo $thumb['two_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                 </div>
+                                 <div id="one" style="margin-left:50px;">
+                                  URL地址：<input id="two_url" name="two_url" type="text" value="<?php echo $thumb['two_url'] ?>" />
                                  </div>
                             </div>
                         </div>
-                        <!-- <div class="col-md-3 col-sm-6">
+                          <div class="col-md-3 col-sm-6">
                             <div class="knob-container">
-                                <input class="knob" data-width="200" data-min="0" data-max="4500" data-displayPrevious="true" value="3299" data-fgColor="#92A3C2" data-readOnly=true;>
-                                <h3 class="text-muted text-center">Subscribers</h3>
+                                <!-- <input class="knob" data-width="200" data-min="0" data-max="2700" data-displayPrevious="true" value="1840" data-fgColor="#92A3C2" data-readOnly=true;> -->
+                                
+                                <input id="three_imgs" name="three_imgs" type="file" multiple="true">
+                                <h3 class="text-muted text-center">左侧轮播图</h3>
+                                <input type="hidden" name="three_img" value="<?php echo $thumb['three_img'] ?>">
+                                <div id="three" style="margin-bottom:10px;">
+                                  <img src="<?php echo $thumb['three_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                 </div>
+                                 <div id="three" style="margin-left:50px;">
+                                  URL地址：<input id="three_url" name="three_url" type="text" value="<?php echo $thumb['three_url'] ?>" />
+                                 </div>
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="knob-container">
-                                <input class="knob" data-width="200" data-min="0" data-max="2700" data-displayPrevious="true" value="1840" data-fgColor="#92A3C2" data-readOnly=true;>
-                                <h3 class="text-muted text-center">Pending</h3>
+                                <!-- <input class="knob" data-width="200" data-min="0" data-max="15000" data-displayPrevious="true" value="10067" data-fgColor="#92A3C2" data-readOnly=true;> -->
+                                <input id="four_imgs" name="three_imgs" type="file" multiple="true">
+                                <h3 class="text-muted text-center">右侧轮播图</h3>
+                                <input type="hidden" name="four_img" value="<?php echo $thumb['four_img'] ?>">
+                                 <div id="four" style="margin-bottom:10px;">
+                                  <img src="<?php echo $thumb['four_img'] ?>"  style="height: 120px;width: 120px;margin-right:5px;margin-left:130px;"/>
+                                 </div>
+                                 <div id="four" style="margin-left:50px;">
+                                  URL地址：<input id="four_url" name="three_url" type="text" value="<?php echo $thumb['four_url'] ?>" />
+                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="knob-container">
-                                <input class="knob" data-width="200" data-min="0" data-max="15000" data-displayPrevious="true" value="10067" data-fgColor="#92A3C2" data-readOnly=true;>
-                                <h3 class="text-muted text-center">Completed</h3>
-                            </div>
-                        </div> -->
                     </div>
         </div>
+        </form>
     </div>
 
-<div class="row">
+<!-- <div class="row"> -->
     <!-- <div class="col-sm-6 col-md-6">
         <div class="panel panel-default">
             <div class="panel-heading no-collapse">Not Collapsible<span class="label label-warning">+10</span></div>
@@ -299,7 +330,7 @@
   <?php $timestamp = time();?>
   $(function(){
    
-    $('#file_upload').uploadify({
+    $('#one_imgs').uploadify({
         'buttonText' : '选择文件',
          'fileSizeLimit' : '500KB',
         'fileTypeDesc' : '选择图片',
@@ -315,11 +346,86 @@
         'onUploadSuccess':function(file,data,response){
           if(response && data!='error'){
              //if($("[name='thumb']").val()==''){
-            $("[name='thumb']").val(data);
+            $("[name='one_img']").val(data);
             alert(data);
             
             //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
-            $("#queue > img").attr('src',data);
+            $("#one > img").attr('src',data);
+          //}
+          }
+        }
+      });
+$('#two_imgs').uploadify({
+        'buttonText' : '选择文件',
+         'fileSizeLimit' : '500KB',
+        'fileTypeDesc' : '选择图片',
+         'fileTypeExts' : '*.gif; *.jpg;*.jpeg; *.png',
+         'fileObjName' : 'fileField',
+         'method'   : 'post',
+        'formData'     : {
+          'timestamp' : '<?php echo $timestamp;?>',
+          'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+        },
+        'swf'      : '<?php  echo base_url(); ?>shopadmin/swf/uploadify.swf',
+        'uploader' : "<?php echo base_url(); ?>shopadmin/index.php/lunbo/upload",
+        'onUploadSuccess':function(file,data,response){
+          if(response && data!='error'){
+             //if($("[name='thumb']").val()==''){
+            $("[name='two_img']").val(data);
+            alert(data);
+            
+            //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
+            $("#two > img").attr('src',data);
+          //}
+          }
+        }
+      });
+$('#three_imgs').uploadify({
+        'buttonText' : '选择文件',
+         'fileSizeLimit' : '500KB',
+        'fileTypeDesc' : '选择图片',
+         'fileTypeExts' : '*.gif; *.jpg;*.jpeg; *.png',
+         'fileObjName' : 'fileField',
+         'method'   : 'post',
+        'formData'     : {
+          'timestamp' : '<?php echo $timestamp;?>',
+          'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+        },
+        'swf'      : '<?php  echo base_url(); ?>shopadmin/swf/uploadify.swf',
+        'uploader' : "<?php echo base_url(); ?>shopadmin/index.php/lunbo/upload",
+        'onUploadSuccess':function(file,data,response){
+          if(response && data!='error'){
+             //if($("[name='thumb']").val()==''){
+            $("[name='three_img']").val(data);
+            alert(data);
+            
+            //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
+            $("#three > img").attr('src',data);
+          //}
+          }
+        }
+      });
+$('#four_imgs').uploadify({
+        'buttonText' : '选择文件',
+         'fileSizeLimit' : '500KB',
+        'fileTypeDesc' : '选择图片',
+         'fileTypeExts' : '*.gif; *.jpg;*.jpeg; *.png',
+         'fileObjName' : 'fileField',
+         'method'   : 'post',
+        'formData'     : {
+          'timestamp' : '<?php echo $timestamp;?>',
+          'token'     : '<?php echo md5('unique_salt' . $timestamp);?>'
+        },
+        'swf'      : '<?php  echo base_url(); ?>shopadmin/swf/uploadify.swf',
+        'uploader' : "<?php echo base_url(); ?>shopadmin/index.php/lunbo/upload",
+        'onUploadSuccess':function(file,data,response){
+          if(response && data!='error'){
+             //if($("[name='thumb']").val()==''){
+            $("[name='four_img']").val(data);
+            alert(data);
+            
+            //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
+            $("#four > img").attr('src',data);
           //}
           }
         }

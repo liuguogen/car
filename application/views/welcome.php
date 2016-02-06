@@ -90,14 +90,14 @@
     <!--<div class="ad container"><img alt="" src="<?php echo base_url() ?>assets/temp/ad1.png" height="100" /></div>-->
     <!--广告位-->
     <div class="ad50 container">
-        <img src="" alt="900*50广告位">       
+        <a href="<?php echo $thumb['one_url'] ?>"><img src="<?php echo $thumb['one_img'] ?>" alt=""></a>       
     </div>
     <div class="ad50 container">
-        <img src="" alt="900*50广告位">        
+       <a href="<?php echo $thumb['two_url'] ?>"> <img src="<?php echo $thumb['two_img'] ?>" alt=""></a>        
     </div>
     <div class="ad container">
-        <div class="adLeft"><img src="" alt="左侧广告位701*80"></div>
-        <div class="adRight"><img src="" alt="右侧广告位280*80"></div>
+        <div class="adLeft"><a href="<?php echo $thumb['three_url'] ?>"><img src="<?php echo $thumb['three_img'] ?>" alt=""></a></div>
+        <div class="adRight"><a href="<?php echo $thumb['four_url'] ?>"><img src="<?php echo $thumb['four_img'] ?>" alt=""></a></div>
         <div class="clear"></div>        
     </div>
 

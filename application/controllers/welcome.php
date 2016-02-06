@@ -19,8 +19,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		
-		$this->load->view('welcome');
+		$this->load->model('thumb_model','thumb');
+		$row=$this->thumb->getThumb();
+		$this->load->view('welcome',array('thumb'=>$row));
 	}
 }
 

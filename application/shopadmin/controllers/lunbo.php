@@ -10,6 +10,7 @@ class Lunbo extends CI_Controller {
 		$this->load->library('session');
 		$this->user=isset($this->session->userdata['user']) ? $this->session->userdata['user'] :  "";
 		
+		
 	}
 	public function add()
 	{
@@ -17,7 +18,13 @@ class Lunbo extends CI_Controller {
 
 
 		$this->__isLogin();
-		$this->load->view('lunbo/add');
+		$this->load->model('thumb_model','thumb');
+		$row=$this->thumb->getThumb();
+		
+
+		$this->load->view('lunbo/add',array(
+			'thumb'=>$row
+			));
 	}
 
 	#images upload
@@ -50,6 +57,43 @@ class Lunbo extends CI_Controller {
 				echo $new_filename;
 			} else {
 				echo 'Invalid file type.';
+			}
+		}
+	}
+
+	#保存轮播图
+	public function addimg(){
+
+
+		$this->load->model('thumb_model','thumb');
+		if($_POST['id']==''){
+			$flag=$this->thumb->insertThumb($_POST);
+			if($flag){
+				echo "<script>
+				alert('succ');
+				window.location.href='".base_url()."shopadmin/index.php/lunbo/add'
+				</script>";
+			}else{
+				echo "<script>
+				alert('fail');
+				
+				</script>";
+			}
+		}else{//update
+			$id=$_POST['id'];
+			unset($_POST['id']);
+			$date=$_POST;
+			$flag=$this->thumb->updateThumb($date,$id);
+			if($flag){
+				echo "<script>
+				alert('succ');
+				window.location.href='".base_url()."shopadmin/index.php/lunbo/add'
+				</script>";
+			}else{
+				echo "<script>
+				alert('fail');
+				
+				</script>";
 			}
 		}
 	}
