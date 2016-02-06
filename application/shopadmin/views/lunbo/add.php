@@ -347,7 +347,7 @@
           if(response && data!='error'){
              //if($("[name='thumb']").val()==''){
             $("[name='one_img']").val(data);
-            alert(data);
+            
             
             //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
             $("#one > img").attr('src',data);
@@ -372,8 +372,7 @@ $('#two_imgs').uploadify({
           if(response && data!='error'){
              //if($("[name='thumb']").val()==''){
             $("[name='two_img']").val(data);
-            alert(data);
-            
+           
             //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
             $("#two > img").attr('src',data);
           //}
@@ -397,7 +396,6 @@ $('#three_imgs').uploadify({
           if(response && data!='error'){
              //if($("[name='thumb']").val()==''){
             $("[name='three_img']").val(data);
-            alert(data);
             
             //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
             $("#three > img").attr('src',data);
@@ -422,7 +420,7 @@ $('#four_imgs').uploadify({
           if(response && data!='error'){
              //if($("[name='thumb']").val()==''){
             $("[name='four_img']").val(data);
-            alert(data);
+            
             
             //$('#queue').append('<a><img src="'+data+'" style="height: 120px;width: 120px;margin-right:5px;margin-left:72px;" /></a>');
             $("#four > img").attr('src',data);
